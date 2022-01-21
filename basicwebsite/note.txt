@@ -1,0 +1,9 @@
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\Django_learn\basicwebsite> python manage.py startapp
+usage: manage.py startapp [-h] [--template TEMPLATE] [--extension EXTENSIONS] [--name FILES] [--exclude [EXCLUDE]] [--version] [-v {0,1,2,3}] [--settings SETTINGS]
+                          [--pythonpath PYTHONPATH] [--traceback] [--no-color] [--force-color]
+                          name [directory]
+manage.py startapp: error: You must provide an application name.
+PS D:\Django_learn\basicwebsite> python manage.py startapp base
+PS D:\Django_learn\basicwebsite> python manage.py runserver
