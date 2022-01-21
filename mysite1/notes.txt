@@ -1,0 +1,33 @@
+ python manage.py migrate
+ python manage.py makemigrations main
+
+ python manage.py shell
+Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> list1 = ToDoList(name="Tim's List")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ToDoList' is not defined
+>>> from main.models import Item, ToDoList
+>>> list1 = ToDoList(name="Tim's List")    
+>>> print(list1.id)
+1
+>>> print(ToDoList.objects.all())
+<QuerySet [<ToDoList: Tim's List>]>
+>>> print(list1.item_set.all())
+<QuerySet []>
+>>> list1.create(text="Go to the mall", complete=False)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'ToDoList' object has no attribute 'create'
+>>> t1=ToDoList(name="First List")
+>>> t1.save()
+>>> t2=ToDoList(name="Sec List")
+>>> t2.save()
+>>> quit()
+
+Username (leave blank to use 'agtha'): itsme@abraham.com
+Email address: itsme@abraham.com
+Password: 
+Password (again):1234
