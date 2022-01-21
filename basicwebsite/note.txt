@@ -1,9 +1,14 @@
-Try the new cross-platform PowerShell https://aka.ms/pscore6
 
+django-admin startproject project_name
+
+Creating an App
 PS D:\Django_learn\basicwebsite> python manage.py startapp
-usage: manage.py startapp [-h] [--template TEMPLATE] [--extension EXTENSIONS] [--name FILES] [--exclude [EXCLUDE]] [--version] [-v {0,1,2,3}] [--settings SETTINGS]
-                          [--pythonpath PYTHONPATH] [--traceback] [--no-color] [--force-color]
-                          name [directory]
-manage.py startapp: error: You must provide an application name.
 PS D:\Django_learn\basicwebsite> python manage.py startapp base
 PS D:\Django_learn\basicwebsite> python manage.py runserver
+
+Creating a View
+Now that we've created an app we can start modifying some files within our app to create our first web page (aka view).
+To do this we will go into our apps root directory and modify the file called views.py
+
+Linking to our View
+Now that we've created a view we need to create a url to link to it. To do this we need to create a new python file called urls.py. 
