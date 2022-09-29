@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=i5JykvxUk_A
+
+django-admin
+django-admin startproject drinks .
